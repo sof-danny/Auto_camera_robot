@@ -1,4 +1,4 @@
-# URDF Example
+#An example camera with camera views in gazebo
 
 
 This repo contains an example of a URDF file and a launch script to run it. (ROS 2)
