@@ -13,7 +13,7 @@ def generate_launch_description():
 
     # Specify the name of the package and path to xacro file within the package
     pkg_name = 'auto_camera_robot'
-    file_subpath = 'description/example_robot.urdf.xacro'
+    file_subpath = 'description/auto_camera_robot.urdf.xacro'
 
 
     # Use xacro to process the file
@@ -44,7 +44,8 @@ def generate_launch_description():
                     output='screen')
 
 
-
+    rviz = Node(package='rviz2', executable='rviz2',
+                    output='screen')
 
 
 
@@ -52,7 +53,8 @@ def generate_launch_description():
     return LaunchDescription([
         gazebo,
         node_robot_state_publisher,
-        spawn_entity
+        spawn_entity,
+        rviz
     ])
 
 

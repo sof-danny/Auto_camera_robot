@@ -8,7 +8,7 @@
 
 
     <!-- This will include all the contents of example_include.xacro first. Go check it out! -->
-    <xacro:include filename="example_include.xacro" />
+    <xacro:include filename="auto_camera_include.xacro" />
 
 
 
@@ -173,7 +173,7 @@
     </link>
 
 
-    <xacro:include filename="example_gazebo.xacro" />
+    <xacro:include filename="auto_camera_gazebo.xacro" />
 
 
 </robot>
